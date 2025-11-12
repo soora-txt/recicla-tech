@@ -6,17 +6,18 @@
 
 header {
   width: 100%;
-  background-color: #F3F5F8;
   display: flex;
+  background-color: #F3F5F8;
+  justify-content: space-around;
   height: 15vh;
   align-items: flex-start;
   align-items: flex-end;
   align-items: center;
 }
 
-div {
+.caixaLogo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 12%;
   align-items: center;
 }
@@ -26,6 +27,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   width: 40%;
+  align-items: center;
 }
 
 a {
@@ -44,16 +46,40 @@ a {
 }
 
 .primeiraSection {
-  background-color: yellow;
-  height: 50vh;
+  border: solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
 }
 .primeiraSection section {
-  border: solid;
-  width: 50%;
-  height: 50vh;
+  border: solid green;
+  height: 60vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+.primeiraSection section h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  width: 55%;
+  border: solid red;
+}
+.primeiraSection section p {
+  font-size: 1.25rem;
+  width: 50%;
+  border: solid blue;
+}
+
+.boxBtnsPrimeiraSection {
+  border: solid purple;
+  width: 50%;
+  display: flex;
   justify-content: space-around;
+}
+.boxBtnsPrimeiraSection button {
+  cursor: pointer;
+  padding: 30px 40px;
 }
 
 .produtosDisponiveis {
@@ -94,4 +120,50 @@ a {
   font-weight: 900;
   border-radius: 15px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .caixalogo {
+    border: solid;
+    width: 70%;
+  }
+  nav {
+    border: solid;
+    width: 100%;
+  }
+  a {
+    font-size: 0.8rem;
+  }
+  .primeiraSection {
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+  }
+  .primeiraSection section {
+    height: 70vh;
+    background-color: #16a34a;
+  }
+  .primeiraSection section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .primeiraSection section p {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection button {
+    padding: 20px 30px;
+  }
+  .primeiraSection img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

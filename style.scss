@@ -6,12 +6,12 @@
 
 header {
   width: 100%;
-  background-color: #F3F5F8;
   display: flex;
+  background-color: #F3F5F8;
   //justify-content: flex-start;
   //justify-content: flex-end;
   //justify-content: center;
-  //justify-content: space-around;
+  justify-content: space-around;
   height: 15vh;
   align-items: flex-start;
   align-items: flex-end;
@@ -19,10 +19,10 @@ header {
 }
 
 
-div{
+.caixaLogo{
   //border: solid;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 12%;
   align-items: center;
 }
@@ -30,10 +30,10 @@ div{
 //h1 {  border: solid red; }
 
 nav {
-  border: #5e7597;
-  display: flex;
+  border:#5e7597;                                                                    display: flex;
   justify-content: space-evenly;
   width: 40%;
+  align-items: center;
 }
 
 a {
@@ -42,7 +42,7 @@ a {
   color: #4B5563;
 }
 
-  .btnVerdeHeader{
+.btnVerdeHeader{
   background-color: #21C05C;
   color: #FFFFFF;
   font-size: 1.5rem;
@@ -51,22 +51,49 @@ a {
   border-radius: 6px;
 }
 
-//Primeira Section 
-.primeiraSection{
-  background-color: yellow;
-  height: 50vh;
-
-section{
-  border: solid;
-  width: 50%;
-  height: 50vh;
+//-----------------Primeira Section--------- //----------- Primeira section - Desktop ------------
+.primeiraSection {
+  border: solid red;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  section {
+    border: solid green;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h2 {
+      font-size: 3.75rem;
+      font-weight: 700;
+      width: 55%;
+      border: solid red;
+    }
+    p {
+      font-size: 1.25rem;
+      width: 50%;
+      border: solid blue;
+    }
+  }
 }
+.boxBtnsPrimeiraSection {
+  border: solid purple;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  button {
+    cursor: pointer;
+    padding: 30px 40px;
+  }
 }
 
 
+
+
+
+
+//----------------------- Section Produtos Disponiveis --------------
 
 .produtosDisponiveis {
   background-color: rgb(203, 244, 230);
@@ -106,6 +133,83 @@ section{
   font-weight: 900;
   border-radius: 15px;
   font-size: 1.2rem;
-
-
 }
+
+
+//Responsivo
+
+//Smartphone max: 500px
+//@media(min-width: ;) and (max-width: ;) { 
+
+//}
+
+//  Quero que você aplique esse estilo em tllas de 0px até 500px
+//Smartphone max: 500px
+
+
+@media (max-width: 500px) {
+  
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  .caixalogo{
+    border:solid;
+    width: 70%;
+  }
+
+  nav{
+    border:solid;
+    width: 100%;
+  }
+
+  a{
+    font-size: 0.8rem;
+  }
+
+  //------------- Primeira Section - Mobile -------------
+  .primeiraSection{
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+
+
+  section{
+
+  height: 70vh;
+  background-color: #16a34a;
+
+    h2{
+      font-size: 1.5rem;
+      width: 100%;
+    }
+
+    p{
+      width: 100%;
+    }
+    
+  }
+
+
+  .boxBtnsPrimeiraSection{
+    width: 100%;
+
+    button{
+      padding: 20px 30px;
+    }
+  }
+
+  img{
+    width: 50%;
+  }
+
+  }
+
+
+  
+}
+
