@@ -51,41 +51,71 @@ a {
   border-radius: 6px;
 }
 
-//-----------------Primeira Section--------- //----------- Primeira section - Desktop ------------
-.primeiraSection {
+//----------------- Primeira section - Desktop ------------
+.primeiraSection{
   border: solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60vh;
-  section {
+    
+  section{
     border: solid green;
     height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    h2 {
+    justify-content: space-evenly
+
+    h2{
       font-size: 3.75rem;
       font-weight: 700;
       width: 55%;
       border: solid red;
     }
-    p {
+
+    p{
       font-size: 1.25rem;
       width: 50%;
       border: solid blue;
     }
   }
 }
-.boxBtnsPrimeiraSection {
+
+.boxBtnsPrimeiraSection{
   border: solid purple;
   width: 50%;
   display: flex;
   justify-content: space-around;
-  button {
+  
+  button{
     cursor: pointer;
     padding: 30px 40px;
   }
+}
+
+
+//-------------------------- Dados Numéricos -----------
+
+.dadosNumericos{
+  background-color: #F3F5F8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+ 
+  div{
+    border: solid;
+    width: 15%;
+    height: 15vh;
+    flex-direction:column;
+    justify-content: space-evenly;
+  }
+
+  h2{
+    color:#16a34a;
+  }
+
 }
 
 
@@ -210,6 +240,32 @@ a {
   }
 
 
-  
-}
+  //--------- Section Dados numericos ------------
 
+  .dadosNumericos{
+    background-color: yellow;
+    height: 25vh;
+
+    div{
+      width: 25%;
+    }
+
+    h2{
+      font-size: 1.8rem;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+  }
+
+
+
+  //--------- Section Produtos Disponiveis -----------
+
+.produtosDisponiveis{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+}

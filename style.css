@@ -57,13 +57,11 @@ a {
   height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-}
-.primeiraSection section h2 {
-  font-size: 3.75rem;
-  font-weight: 700;
-  width: 55%;
-  border: solid red;
+  justify-content: space-evenly h2;
+  justify-content-font-size: 3.75rem;
+  justify-content-font-weight: 700;
+  justify-content-width: 55%;
+  justify-content-border: solid red;
 }
 .primeiraSection section p {
   font-size: 1.25rem;
@@ -80,6 +78,25 @@ a {
 .boxBtnsPrimeiraSection button {
   cursor: pointer;
   padding: 30px 40px;
+}
+
+.dadosNumericos {
+  background-color: #F3F5F8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+}
+.dadosNumericos div {
+  border: solid;
+  width: 15%;
+  height: 15vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dadosNumericos h2 {
+  color: #16a34a;
 }
 
 .produtosDisponiveis {
@@ -165,5 +182,23 @@ a {
   }
   .primeiraSection img {
     width: 50%;
+  }
+  .dadosNumericos {
+    background-color: yellow;
+    height: 25vh;
+  }
+  .dadosNumericos div {
+    width: 25%;
+  }
+  .dadosNumericos h2 {
+    font-size: 1.8rem;
+  }
+  .dadosNumericos p {
+    font-size: 1rem;
+  }
+  .produtosDisponiveis {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
   }
 }/*# sourceMappingURL=style.css.map */
