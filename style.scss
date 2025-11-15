@@ -7,15 +7,12 @@
 header {
   width: 100%;
   display: flex;
+  justify-content: space-around;
   background-color: #F3F5F8;
   //justify-content: flex-start;
   //justify-content: flex-end;
   //justify-content: center;
-  justify-content: space-around;
-  height: 15vh;
-  align-items: flex-start;
-  align-items: flex-end;
-  align-items: center;
+  
 }
 
 
@@ -27,10 +24,12 @@ header {
   align-items: center;
 }
 
-//h1 {  border: solid red; }
+h1{  
+  font-size: 2rem;
+}
 
 nav {
-  border:#5e7597;                                                                    display: flex;
+  display: flex;                                                            
   justify-content: space-evenly;
   width: 40%;
   align-items: center;
@@ -108,6 +107,7 @@ a {
     border: solid;
     width: 15%;
     height: 15vh;
+    display: flex;
     flex-direction:column;
     justify-content: space-evenly;
   }
@@ -122,11 +122,9 @@ a {
 
 
 
-
 //----------------------- Section Produtos Disponiveis --------------
 
 .produtosDisponiveis {
-  background-color: rgb(203, 244, 230);
   height: 85vh;
   display: flex;
   justify-content: space-evenly;
@@ -199,6 +197,11 @@ a {
     font-size: 0.8rem;
   }
 
+  .btnVerdeHeader{
+    font-size: 0.8rem;
+  }
+
+
   //------------- Primeira Section - Mobile -------------
   .primeiraSection{
     background-color: violet;
@@ -206,25 +209,23 @@ a {
     flex-direction: column;
     text-align: center;
     height: 80vh;
-
-
-  section{
-
-  height: 70vh;
-  background-color: #16a34a;
-
-    h2{
-      font-size: 1.5rem;
-      width: 100%;
-    }
-
-    p{
-      width: 100%;
-    }
-    
   }
 
+  section{
+    height: 70vh;
+  } 
 
+
+  h2{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  p{
+    width: 100%;
+  }
+    
+  
   .boxBtnsPrimeiraSection{
     width: 100%;
 
@@ -237,7 +238,7 @@ a {
     width: 50%;
   }
 
-  }
+  
 
 
   //--------- Section Dados numericos ------------
@@ -245,9 +246,10 @@ a {
   .dadosNumericos{
     background-color: yellow;
     height: 25vh;
+  }
 
     div{
-      width: 25%;
+      width: 30%;
     }
 
     h2{
@@ -257,15 +259,24 @@ a {
     p{
       font-size: 1rem;
     }
-  }
+  
 
-
-
+  
   //--------- Section Produtos Disponiveis -----------
 
 .produtosDisponiveis{
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
-}
+  }
+
+  article{
+    width: 80%;
+    text-align: column;
+  }
+
+  article button{
+    font-size: 1rem;
+    width: 70%;
+    font-weight: 400;
+  }
 }
